@@ -6,11 +6,7 @@ async function createConnection() {
             host: 'srv1752.hstgr.io',
             user: 'u607585719_class',
             password: 'Classhos@79',
-            database: 'u607585719_class',
-            waitForConnections: true,
-            connectionLimit: 10,  // Reduced from 100
-            queueLimit: 0,
-            connectTimeout: 10000  // Added timeout (10s)
+            database: 'u607585719_class'
         });
         console.log('Database connected successfully');
         return connection;
