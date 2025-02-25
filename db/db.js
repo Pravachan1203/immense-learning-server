@@ -3,13 +3,13 @@ import mysql from 'mysql2/promise';
 async function createConnection() {
     try {
         const connection = await mysql.createConnection({
-            host:'localhost', //'srv1752.hstgr.io',
-            user: 'root',//'u607585719_class',
-            password: '', //Classhos@79',
-            database:'class'// 'u607585719_class',
-           // waitForConnections: true,
-           // connectionLimit: 100,  
-           // queueLimit: 0
+            host:'srv1752.hstgr.io',
+            user: 'u607585719_class',
+            password:'Classhos@79',
+            database:'u607585719_class',
+            waitForConnections: true,
+            connectionLimit: 100,  
+            queueLimit: 0
         });
         console.log('Database connected successfully');
         return connection;
